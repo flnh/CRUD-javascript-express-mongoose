@@ -15,8 +15,8 @@ function insererNouveauJeuxVideo(nouveauJeuxVideo) {
       <td>${nouveauJeuxVideo.plateforme}</td>
       <td>${nouveauJeuxVideo.editeur}</td>
       <td>${nouveauJeuxVideo.nbExemplairesVendus}</td>
-      <td><a href="/pages/modifier-jeux-video.html?id=${nouveauJeuxVideo.id}" class="btn btn-warning">Modifier</a></td>
-      <td><a class="btn btn-danger">Supprimer</a></td>
+      <td><a href="/pages/modifier-jeux-video.html?id=${nouveauJeuxVideo.id}" class="btn btn-outline-warning">Modifier</a></td>
+      <td><a class="btn btn-outline-danger">Supprimer</a></td>
     </tr>
   `)
   myListe.querySelector('tr:first-child a.btn-danger').addEventListener('click', () => {
