@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script type="module" src="../script/jeux-videos-index.js"></script>
+  <title>Liste jeux videos</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand navbar-light bg-light p-2">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Accueil</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link btn btn-primary" href="/pages/jeux-videos.html">Liste</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Mes jeux videos</h1>
+    <div class="row">
+      <div class="col-9 overflow-auto">
+        <table class="table">
+          <thead>
+            <th>Id</th>
+            <th>Nom</th>
+            <th>Plateforme</th>
+            <th>Editeur</th>
+            <th>Exemplaires (millions dans le monde)</th>
+            <th>Modification</th>
+            <th>Suppression</th>
+          </thead>
+          <tbody id="myListe">
+
+          </tbody>
+        </table>
+      </div>
+      <div class="col-3">
+        <form action="#" name="form">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="nom">Nom</label><br>
+                <small class="text-danger" id="erreur-nom"></small>
+                <input type="text" class="form-control" id="nom">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="plateforme">Plateforme</label><br>
+                <small class="text-danger" id="erreur-plateforme"></small>
+                <input type="text" class="form-control" id="plateforme">
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="editeur">Editeur</label><br>
+              <small class="text-danger" id="erreur-editeur"></small>
+              <input type="text" class="form-control" id="editeur">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="nb-exemplaires-vendus">Exemplaires (millions dans le monde)</label><br>
+              <small class="text-danger" id="erreur-nbExemplairesVendus"></small>
+              <input type="number" value="0" class="form-control" id="nb-exemplaires-vendus">
+            </div>
+          </div>
+          <br>
+          <div class="text-center">
+            <button id="btn" class="btn btn-outline-success">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

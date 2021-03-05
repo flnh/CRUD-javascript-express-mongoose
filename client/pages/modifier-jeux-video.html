@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script type="module" src="../script/jeux-video-modifier.js"></script>
+  <title>Modification jeux video</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand navbar-light bg-light p-2">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pages/jeux-videos.html">Liste</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <h1>Modifier le jeux vidéo</h1>
+    <div class="col-12">
+        <form action="#" name="form">
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="nom">Nom</label><br>
+                <small class="text-danger" id="erreur-nom"></small>
+                <input type="text" class="form-control" id="nom">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="plateforme">Plateforme</label><br>
+                <small class="text-danger" id="erreur-plateforme"></small>
+                <input type="text" class="form-control" id="plateforme">
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="editeur">Editeur</label><br>
+              <small class="text-danger" id="erreur-editeur"></small>
+              <input type="text" class="form-control" id="editeur">
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group">
+              <label for="nb-exemplaires-vendus">Exemplaires vendus (millions dans le monde)</label><br>
+              <small class="text-danger" id="erreur-nbExemplairesVendus"></small>
+              <input type="number" class="form-control" id="nb-exemplaires-vendus">
+            </div>
+          </div>
+          <br>
+          <div class="text-center">
+            <button id="btn" class="btn btn-outline-success">Envoyer</button>
+          </div>
+        </form>
+      </div>
+  </div>
+</body>
+</html>
