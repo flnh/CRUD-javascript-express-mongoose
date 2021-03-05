@@ -19,7 +19,7 @@ function insererNouveauJeuxVideo(nouveauJeuxVideo) {
       <td><a class="btn btn-outline-danger">Supprimer</a></td>
     </tr>
   `)
-  myListe.querySelector('tr:first-child a.btn-danger').addEventListener('click', () => {
+  myListe.querySelector('tr:first-child a.btn-outline-danger').addEventListener('click', () => {
     supprimer(nouveauJeuxVideo.id)
   })
 }
